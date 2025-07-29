@@ -1,0 +1,12 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#joke{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    color: black;
+     padding: 20px 0; 
+}
