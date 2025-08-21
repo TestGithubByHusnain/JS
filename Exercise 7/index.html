@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Generator</title>
+  <style>
+    body {
+      background: #f4f6fb;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #fff;
+      padding: 2rem 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      text-align: center;
+      min-width: 320px;
+    }
+    h2 {
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+    .password-box {
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+      background: #f0f2f7;
+      border: none;
+      border-radius: 6px;
+      padding: 0.7rem 1rem;
+      width: 100%;
+      margin-bottom: 1.2rem;
+      text-align: center;
+      color: #222;
+    }
+    .generate-btn {
+      background: #4f8cff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .generate-btn:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Password Generator</h2>
+    <input type="text" id="password" class="password-box" readonly>
+    <br>
+    <button class="generate-btn" onclick="generatePassword()">Generate Password</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
